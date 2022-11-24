@@ -9,6 +9,7 @@ import { DataComponent } from './data/data.component';
 import {TestService} from "./test.service";
 import {ReactiveFormsModule} from "@angular/forms";
 import { FormComponent } from './form/form.component';
+import { FormGroupComponent } from './form-group/form-group.component';
 
 
 
@@ -18,7 +19,8 @@ import { FormComponent } from './form/form.component';
     DemoComponent,
     DataComponent,
     routingComponents,
-    FormComponent
+    FormComponent,
+    FormGroupComponent
   ],
   imports: [
     BrowserModule,
