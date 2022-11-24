@@ -1,0 +1,10 @@
+<div style="align-content: center">
+  <label>
+    Customer Name :
+    <input type="text" [formControl]="CustomerName">
+  </label>
+
+  <button (click)="updateName()">Update</button>
+</div>
+
+<h3>{{CustomerName.value}}</h3>

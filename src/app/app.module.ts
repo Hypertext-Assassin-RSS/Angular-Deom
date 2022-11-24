@@ -7,6 +7,9 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { DemoComponent } from './demo/demo.component';
 import { DataComponent } from './data/data.component';
 import {TestService} from "./test.service";
+import {ReactiveFormsModule} from "@angular/forms";
+import { FormComponent } from './form/form.component';
+
 
 
 @NgModule({
@@ -14,12 +17,14 @@ import {TestService} from "./test.service";
     AppComponent,
     DemoComponent,
     DataComponent,
-    routingComponents
+    routingComponents,
+    FormComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    ReactiveFormsModule
   ],
   providers: [TestService],
   bootstrap: [AppComponent]
