@@ -7,9 +7,11 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { DemoComponent } from './demo/demo.component';
 import { DataComponent } from './data/data.component';
 import {TestService} from "./test.service";
-import {ReactiveFormsModule} from "@angular/forms";
+import {FormsModule, ReactiveFormsModule} from "@angular/forms";
 import { FormComponent } from './form/form.component';
 import { FormGroupComponent } from './form-group/form-group.component';
+import { TdfComponent } from './tdf/tdf.component';
+
 
 
 
@@ -20,13 +22,15 @@ import { FormGroupComponent } from './form-group/form-group.component';
     DataComponent,
     routingComponents,
     FormComponent,
-    FormGroupComponent
+    FormGroupComponent,
+    TdfComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    FormsModule
   ],
   providers: [TestService],
   bootstrap: [AppComponent]
