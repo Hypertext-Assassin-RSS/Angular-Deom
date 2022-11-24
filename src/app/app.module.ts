@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { DemoComponent } from './demo/demo.component';
 import { DataComponent } from './data/data.component';
+import {TestService} from "./test.service";
 
 @NgModule({
   declarations: [
@@ -18,7 +19,7 @@ import { DataComponent } from './data/data.component';
     AppRoutingModule,
     BrowserAnimationsModule
   ],
-  providers: [],
+  providers: [TestService],
   bootstrap: [AppComponent]
 })
 export class AppModule {}
